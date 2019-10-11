@@ -70,8 +70,7 @@ render(): * {
           <ScrollView
               style={styles.fill}
               scrollEventThrottle={16}
-              onScroll={Animated.event([{nativeEvent: {contentOffset: {y: this.state.scrollY }}}])}
-          >
+              onScroll={Animated.event([{nativeEvent: {contentOffset: {y: this.state.scrollY }}}])}>
             {this.renderScrollViewContent()}
           </ScrollView>
 
